@@ -1,0 +1,175 @@
+@media screen and (max-width: 1490px) {
+
+
+    .main_index {
+
+        flex-direction: column;
+        align-items: center;
+
+        .div_parrafo {
+
+            margin: 0 120px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1399px) {
+
+    .container_gral {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+
+    }
+
+    .main {
+
+        .div_parrafo {
+
+            margin: 0px 100px;
+        }
+    }
+
+    .div_der {
+        display: none;
+    }
+
+    .div_izq {
+        display: none;
+    }
+
+    .footer {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .main {
+
+        flex-direction: column;
+        align-items: center;
+
+        .div_parrafo {
+
+            margin: 0px 50px;
+        }
+    }
+
+    .contenedor_gral .nav_gral .nav_menu{
+        gap: 50px;
+    }
+
+
+    .div_listmaps {
+        display: flex;
+        flex-direction: row;
+        padding-left: 30px;
+        margin: 40px;
+
+        .form-check {
+            padding-left: 3em;
+        }
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .contenedor_gral .nav_gral .nav_menu {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .contenedor_gral {
+
+        margin: 0px;
+
+        .header {
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+
+            .img_logoDer {
+                display: none;
+            }
+
+            .img_logoIzq {
+
+                height: 100px;
+            }
+
+            .titulo {
+                padding-top: 0px;
+            }
+        }
+
+        .nav_gral {
+           /* position: relative;*/
+            justify-content: end;
+            
+
+            .burger {
+                display: flex;
+            }
+
+            .nav_menu {
+                
+                display: none;
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+                top: 100%;
+                
+
+            }
+
+            .nav_menu.active {
+                padding: 0px;
+                display: flex;
+            }
+        }
+
+
+
+        .main {
+            padding: 0px;
+
+            .div_parrafo {
+
+                margin: 0px;
+            }
+        }
+
+        .footer {
+            margin: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .main {
+        .div_video {
+            .video_index {
+                width: 370px;
+                height: 250px;
+            }
+
+        }
+
+        .div_listmaps {
+            margin: 0px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+    }
+
+}

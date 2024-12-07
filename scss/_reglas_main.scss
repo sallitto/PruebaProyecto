@@ -1,0 +1,42 @@
+/*Utlizacion de mixin*/
+
+@mixin colorFondo($color){
+    background-color: $color;
+}
+
+.main {
+
+    .item_regla {
+        font-family: "Nunito", serif;
+        list-style-type: upper-roman;
+        margin: 0 20px;
+        padding: 1px;
+    }
+
+    .accordion {
+        text-align: center;
+        align-content: center;
+        border: none;
+
+        .accordion-item {
+            align-items: center;
+            color:  rgb(28, 218, 231);
+            @include colorFondo(transparent);
+            border: none;
+
+            .accordion-button {
+                color:  rgb(28, 218, 231);
+                font-weight: bold;
+                border-bottom: gray;
+                @include colorFondo(  gray);
+                border: none;
+
+                &:not(.collapsed) {
+                    color: rgb(28, 218, 231);
+                    @include colorFondo(  gray);
+                    box-shadow:  gray;
+                }
+            }
+        }
+    }
+}
